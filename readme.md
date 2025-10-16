@@ -44,5 +44,5 @@ Want to run the project on your own machine? Here’s how:
 
 Clone this repository to your local machine:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/ai-art-generator.git](https://github.com/YOUR_USERNAME/ai-art-generator.git)
+git clone [https://github.com/nayansm004/Ai-Art-Generator.git](https://github.com/nayansm004/Ai-Art-Generator.git)
 cd ai-art-generator
