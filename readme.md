@@ -13,7 +13,7 @@ A full-stack web application that generates stunning images from text prompts us
 
 **Try the application live right now!**
 
-### ➡️ [https://YOUR_APP_NAME.onrender.com](https://YOUR_APP_NAME.onrender.com)
+### ➡️ [https://ai-art-generator-4wlo.onrender.com/](https://ai-art-generator-4wlo.onrender.com/)
 
 *(Note: This project runs on a free hosting tier. The server may take 30-60 seconds to "wake up" on the first visit if it has been inactive.)*
 
