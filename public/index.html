@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header">
+            <div class="header-icon">🎨</div>
+            <h1 class="header-title">AI Art Generator</h1>
+            <p class="header-subtitle">Bring your imagination to life with AI-generated art</p>
+        </header>
+
+        <main class="main-content">
+
+            <section class="panel">
+                <h2 class="panel-title">1. Describe Your Image</h2>
+
+                <div class="input-section">
+                    <label for="prompt-input" class="input-label">Your Prompt</label>
+                    <textarea id="prompt-input" class="prompt-input" rows="6" placeholder="A high-resolution photorealistic image of a cat wearing a tiny astronaut helmet, floating in space..."></textarea>
+                    <p class="input-hint">Be specific! More detail leads to better results.</p>
+                </div>
+
+                <button id="generate-btn" class="generate-btn">
+                    <span class="btn-icon">✨</span>
+                    Generate Image
+                </button>
+
+                <div id="error-message" class="error-message hidden">
+                    <span class="error-icon">⚠️</span>
+                    <p id="error-text" class="error-text">Something went wrong. Please try again.</p>
+                </div>
+
+                <div class="examples-section">
+                    <h3 class="examples-title">Need inspiration? Try one of these:</h3>
+                    <div class="examples-list">
+                        <button class="example-btn" data-prompt="A red panda wearing a tiny chef hat, cooking in a rustic kitchen, cinematic lighting">A red panda wearing a tiny chef hat...</button>
+                        <button class="example-btn" data-prompt="A surrealist painting of a clock melting on a tree branch, in the style of Salvador Dalí">A surrealist painting of a clock melting...</button>
+                        <button class="example-btn" data-prompt="A synthwave-style landscape of a futuristic city with neon lights and a retro car, 8k resolution">A synthwave-style landscape...</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="output-header">
+                    <h2 class="panel-title">2. Your Masterpiece</h2>
+                    <a id="download-btn" class="download-btn hidden" href="#" download="ai-generated-image.jpg">Download</a>
+                </div>
+
+                <div id="image-container" class="image-container">
+
+                    <div id="placeholder-state" class="placeholder-state">
+                        <div class="placeholder-icon">🖼️</div>
+                        <p class="placeholder-text">Your generated image will appear here</p>
+                    </div>
+                    
+                    <div id="loading-state" class="loading-state hidden">
+                        <div class="spinner"></div>
+                        <p class="loading-text">Generating... This can take up to 30 seconds.</p>
+                    </div>
+
+                    <img id="generated-image" class="generated-image hidden" src="" alt="AI-generated art">
+                
+                </div>
+
+                <div id="prompt-display" class="prompt-display hidden">
+                    <p class="prompt-display-label">PROMPT USED:</p>
+                    <p id="prompt-display-text" class="prompt-display-text">A cat astronaut...</p>
+                </div>
+            </section>
+        
+        </main>
+
+        <footer class="info-banner">
+            <span class="info-icon">💡</span>
+            <div class="info-content">
+                <h3 class="info-title">How This Works</h3>
+                <p class="info-text">This app uses a <strong>FLUX-SCHNELL</strong> model hosted on Hugging Face. Your prompt is sent to a secure server, which then queries the AI to generate your image. No data is stored.</p>
+            </div>
+        </footer>
+
+    </div> <script src="script.js" defer></script>
+</body>
+</html>
