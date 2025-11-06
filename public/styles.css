@@ -651,3 +651,38 @@ body::before {
 ::-webkit-scrollbar-thumb:hover {
     background: #333;
 }
+
+/* 💻 Custom Footer Styles for Nayan's Info 🔗 */
+.footer {
+    text-align: center;
+    padding: 30px 20px 40px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-subtle);
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.footer strong {
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+.github-link {
+    color: var(--neon-cyan);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.github-link:hover {
+    color: var(--neon-magenta);
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    transform: translateY(-1px);
+}
