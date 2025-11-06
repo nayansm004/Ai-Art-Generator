@@ -57,6 +57,25 @@ A cutting-edge full-stack web application that brings your creative visions to l
 
 ---
 
+## 🚨 Important Note About Live Demo
+
+> **⚠️ If the [Live Demo](https://ai-art-generator-4wlo.onrender.com) shows "All models failed" errors:**
+> 
+> This typically means the Hugging Face API token used in the hosted demo has **exhausted its free credits**. 
+>
+> **Solution:** Clone the repository and run it locally with your own API token:
+> ```bash
+> git clone https://github.com/nayansm004/Ai-Art-Generator.git
+> cd Ai-Art-Generator
+> npm install
+> # Add your own HF_API_TOKEN to .env file
+> npm start
+> ```
+> 
+> **Why this happens:** Hugging Face free tier tokens have limited API credits. The public demo may hit these limits due to multiple users. Your personal token will give you fresh credits and full access to all features! 🎨
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
