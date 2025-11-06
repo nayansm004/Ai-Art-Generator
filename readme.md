@@ -131,26 +131,26 @@ HF_BASE_URL=https://router.huggingface.co/hf-inference
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                     Frontend (React)                     │
-│  ┌──────────┐  ┌──────────┐  ┌────────────────────┐   │
-│  │  HTML5   │  │   CSS3   │  │  Vanilla JS (ES6+) │   │
-│  └──────────┘  └──────────┘  └────────────────────┘   │
+│                     Frontend (React)                    │
+│  ┌──────────┐  ┌──────────┐  ┌────────────────────┐     │
+│  │  HTML5   │  │   CSS3   │  │  Vanilla JS (ES6+) │     │
+│  └──────────┘  └──────────┘  └────────────────────┘     │
 └─────────────────────────────────────────────────────────┘
                            ↓
 ┌─────────────────────────────────────────────────────────┐
-│              Backend (Node.js + Express)                 │
-│  ┌────────────────┐  ┌──────────────────────────┐      │
-│  │  API Gateway   │  │   Smart Retry Logic      │      │
-│  └────────────────┘  └──────────────────────────┘      │
+│              Backend (Node.js + Express)                │
+│  ┌────────────────┐  ┌──────────────────────────┐       │
+│  │  API Gateway   │  │   Smart Retry Logic      │       │
+│  └────────────────┘  └──────────────────────────┘       │
 └─────────────────────────────────────────────────────────┘
                            ↓
 ┌─────────────────────────────────────────────────────────┐
-│           Hugging Face Inference API Router              │
-│                                                          │
+│           Hugging Face Inference API Router             │
+│                                                         │
 │  1. FLUX.1-schnell          (Primary - Highest Quality) │
 │  2. SDXL-turbo             (Fast & Reliable Fallback)   │
-│  3. SD3-medium             (Balanced Performance)        │
-│  4. SD2.1                  (Most Reliable)               │
+│  3. SD3-medium             (Balanced Performance)       │
+│  4. SD2.1                  (Most Reliable)              │
 └─────────────────────────────────────────────────────────┘
 ```
 
