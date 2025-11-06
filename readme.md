@@ -467,8 +467,4 @@ If you find this project useful, please consider giving it a ⭐ on GitHub!
 
 *Transform your imagination into reality, one prompt at a time*
 
-<<<<<<< HEAD
-</div>
-=======
-</div>
->>>>>>> ae30d7d8131a861799e36548f9468cb4d38dbbd4
+
